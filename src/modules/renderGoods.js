@@ -2,6 +2,8 @@ const renderGoods = (goods) => {
   const goodsWrapper = document.querySelector('.goods');
 
   localStorage.setItem('goods', JSON.stringify(goods));
+  // localStorage - хранилище в браузере
+  // JSON.stringify - переводим массив в строку
 
   goodsWrapper.innerHTML = '';
 

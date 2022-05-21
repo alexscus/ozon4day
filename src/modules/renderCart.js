@@ -4,13 +4,11 @@ const renderCart = (goods) => {
   cartWrapper.innerHTML = '';
 
   if (goods.length === 0) {
-    console.log('1ssds');
     cartWrapper.insertAdjacentHTML(
       'beforeend',
       `<div id="cart-empty">Ваша корзина пока пуста</div>`
     );
   } else {
-    console.log('2ssds');
     goods.forEach((goodItem) => {
       cartWrapper.insertAdjacentHTML(
         'beforeend',
