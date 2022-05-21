@@ -92,7 +92,7 @@ const cart = () => {
 
     postData(cart).then(() => {
       localStorage.removeItem('cart');
-
+      counterFunc();
       renderCart([]);
 
       cartTotal.textContent = 0;
